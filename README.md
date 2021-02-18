@@ -59,4 +59,13 @@ sudo telegraf -config /etc/telegraf/telegraf.d/monitor-xg.conf --test
 influx
 > use telegraf
 > exit
+> 
 ```
+
+Now you'll want to open up your firewall to access the web UI from a browser
+```
+sudo ufw allow 3000
+sudo ufw allow 162
+```
+
+To continue the UI tweaks, follow along here: https://wiki.kopacko.us/doku.php?id=resources:linux:debian:grafana
